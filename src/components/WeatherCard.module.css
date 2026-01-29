@@ -1,0 +1,72 @@
+.card {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  color: white;
+  height: 68vh;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  width: 80%;
+  margin: 1rem auto; /* Centers the card horizontally */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  /* Drop shadow makes white icons pop on light backgrounds */
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+/* Tablet */
+@media (min-width: 600px) {
+  .card {
+    max-width: 360px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .card {
+    max-width: 400px;
+  }
+}
+/* WeatherCard.module.css */
+
+.icon {
+  width: 8rem; /* 128px */
+  height: 8rem;
+  display: block; /* Fixes alignment issues */
+  margin: 0 auto; /* Centers the icon */
+  filter: drop-shadow(
+    0 10px 8px rgba(0, 0, 0, 0.3)
+  ); /* Shadow behind the icon shape */
+}
+
+.temp {
+  font-size: 2rem; /* Massive size */
+  font-weight: 800; /* Extra bold */
+  margin: 0; /* Remove default spacing */
+  line-height: 1; /* Tighter line height */
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.city {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase; /* NOIDA */
+  letter-spacing: 0.1em; /* Spacing */
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: capitalize; /* Clear Sky */
+  margin-top: 0.5rem;
+  opacity: 0.9; /* Subtle transparency */
+}
